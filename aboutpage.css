@@ -1,0 +1,488 @@
+body {
+    background-color: var(--bg-1);
+    color: var(--text-primary);
+}
+
+a {
+    color: var(--accent-primary);
+}
+a:hover {
+    color: var(--accent-hover);
+}
+
+.card {
+    background-color: var(--bg-2);
+    border: 1px solid var(--border-subtle);
+}
+
+.container-fluid {
+    color: var(--bg-1) !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    min-height: 80px;
+}
+     /* Forces it to have a 
+body {
+    background-color: var(--bg-1);
+    color: var(--text-primary);
+}
+
+a {
+    color: var(--accent-primary);
+\}
+a:hover {
+    color: var(--accent-hover);
+
+$0visible height */
+
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800; /* Extra bold for that logo look */
+    letter-spacing: -1px; /* Adds a bit of premium "breathability" */
+    text-transform: uppercase; /* Tech logos look better in all caps */
+}
+.Pages-Purpose {
+    background-color: rgb(29,29,31);
+    text-align: center;
+    font-family: "-apple-system", "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif ;
+    
+}
+
+/* searchbar css for navbar */
+
+
+.search-bar {
+  --size: 50px;
+  --padding: 8px;
+  --expanded-width: 300px;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  background-color: #fff;
+  /* box-shadow: 0 10px 10px 0 #d6d9e2; */
+  border-radius: 100px;
+  outline: 1px solid transparent;
+  overflow: hidden;
+
+  padding: var(--padding);
+  margin-inline: auto;
+  width: var(--size);
+  height: var(--size);
+  max-width: 100%;
+  transition: width 0.5s, outline 0.5s;
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+
+.search-bar:focus-within {
+  width: var(--expanded-width);
+  outline: 1px solid #2e2e2e;
+}
+
+.search-input {
+  font-size: 18px;
+  color: #3a3a3a;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-inline: 1rem;
+  flex: auto;
+
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.search-bar:focus-within .search-input {
+  opacity: 1;
+}
+
+.search-submit {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #fff;
+  background-color: #3a3a3a;
+  border-radius: 50%;
+  border: none;
+  width: calc(var(--size) - var(--padding) - var(--padding));
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+/* End of searchbar code section */
+
+/* Purpose section */
+
+
+
+
+/* Footer Code section */
+
+.spacing-for-inp {
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 3px;
+}
+
+.spacing-for-inp-2 {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  text-align-last: left;
+}
+
+footer .col {
+  text-align: left;
+}
+footer ul {
+  padding: 0;
+}
+
+.social-icon {
+  text-decoration: none;
+}
+
+.coltopper a {
+  margin-bottom: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+.coltopper a:hover {
+  text-decoration: underline;
+}
+
+.colfooter {
+  margin-top: 30px;
+  background-color: #12021a;
+  padding: 5px 0 0; 
+
+  /* line */
+  border-top: 3px solid #c13131; 
+}
+
+.col ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.col ul li a:hover {
+  text-decoration: underline;
+}
+
+/* footer code end section */
+
+/* * {
+    outline: 1px solid red;
+}  */
+
+:root {
+    /* Primary Palette */
+    --space-indigo: #283044;
+    --steel-blue: #78A1BB;
+    --mint-cream: #EBF5EE;
+    --khaki-beige: #BFA89E;
+    --taupe: #8B786D;
+
+    /* Derived / Dark Variants */
+    --space-indigo-dark: #1c2233;
+    --steel-blue-hover: #5f8aa6;
+    --steel-blue-glow: rgba(120, 161, 187, 0.15);
+
+    /* Backgrounds (dark → light) */
+    --bg-1: #1a2030;        /* darkest — main page bg */
+    --bg-2: #283044;        /* space-indigo — cards, panels */
+    --bg-3: #2f3a50;        /* slightly lighter panels */
+    --bg-4: #EBF5EE;        /* mint cream — light sections */
+
+    /* Borders */
+    --border-subtle: rgba(255, 255, 255, 0.07);
+    --border-warm: rgba(191, 168, 158, 0.25);  /* khaki tint */
+
+    /* Text */
+    --text-primary: #EBF5EE;     /* mint cream on dark bg */
+    --text-secondary: #BFA89E;   /* khaki beige — muted text */
+    --text-dark: #283044;        /* space indigo on light bg */
+
+    /* Accents */
+    --accent-primary: #78A1BB;   /* steel blue — CTAs, links */
+    --accent-hover: #5f8aa6;
+    --accent-warm: #BFA89E;      /* khaki — highlights, tags */
+    --accent-warm-hover: #a8917f;
+
+    /* Apply the mint cream color to standard text and main headings */
+    h1, h2, h3, h4, h5, h6, p, span, li {
+        color: var(--text-primary);
+    }
+
+    /* Optional: Use the khaki beige for smaller headings or muted text 
+    to create contrast against the primary mint cream text */
+    h2, h4, h6 {
+        color: var(--text-secondary);
+    }
+
+    /* Ensure Bootstrap's navbar links also respect your accent color */
+    .navbar-nav .nav-link {
+        color: var(--text-primary) !important;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: var(--accent-primary) !important;
+    }
+
+
+}
+
+/* transparent navbar */
+.navbar {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Samara about info code */
+.Samara {
+  display: flex;
+  width: 50%;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.history-img-row {
+    width: 300px;
+    padding: 20px;
+}
+
+.history-row {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+}
+.text2 {
+    text-align: right;
+}
+
+
+.inpute {
+    height: 350px;
+    width: 400px;
+    
+}
+
+.beginning {
+    display: flex;
+    align-items: center;
+}
+
+.reason {
+    display: flex;
+    align-items: center;
+    
+}
+
+.company-at-today {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+.lol {
+    width: 300px;
+}
+
+
+/* Card code section */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-color: rgb(255, 255, 255);
+}    
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-price-edit {
+    margin-top: auto;
+}
+
+.card {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+}
+
+header {
+    position: relative;
+    background-image: url("https://4kwallpapers.com/images/wallpapers/cityscape-night-city-city-lights-skyline-clouds-reflections-2880x1800-9017.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.filter-blur {
+    /* background: rgba(240, 227, 227, 0.5); */
+    backdrop-filter: blur(5px);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(
+        to bottom,
+        rgba(26, 32, 48, 1) 0%,   /* transparent top */
+        rgba(26, 32, 48, 0.16) 60%,
+        rgba(26, 32, 48, 1) 100% 
+    );
+}
+
+.samara-logo {
+    position: absolute;
+    z-index: 2;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+p {
+  color: #555;
+  line-height: 1.6;
+}
+
+
+section {
+  max-width: 1100px;
+  margin: auto;
+}
+
+
+.timeline {
+  position: relative;
+  width: 80%;
+  margin: 50px auto;
+}
+
+/* CENTER LINE */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: blue;
+}
+
+/* ITEMS */
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px 0;
+  position: relative;
+}
+
+/* LEFT SIDE */
+.timeline-item.left {
+  flex-direction: row;
+}
+
+/* RIGHT SIDE */
+.timeline-item.right {
+  flex-direction: row-reverse;
+}
+
+/* CONTENT + IMAGE WIDTH */
+.content {
+  width: 45%;
+}
+
+/* DOT */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 18px;
+  background: #3498db;
+  border-radius: 50%;
+  border: 4px solid white;
+  z-index: 1;
+}
+
+/* IMAGE STYLE */
+.image {
+  width: 200px;
+  height: 300px;
+  border-radius: 60%;
+  overflow: hidden;
+
+
+}
+
+.image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.abtimg {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.abtimg:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.Who {
+  text-align: center;
+}
+
+.TI {
+    direction:rtl;
+}
+
+
+
+
+
+
+
