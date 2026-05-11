@@ -1,0 +1,74 @@
+body {
+    background-color: var(--bg-1);
+    color: var(--text-primary);
+}
+a {
+    color: var(--accent-primary);
+}
+a:hover {
+    color: var(--accent-hover);
+}
+.product-card {
+    background-color: var(--bg-2) !important;
+    border: 1px solid var(--border-subtle) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-color: var(--accent-primary) !important;
+}
+
+.price-tag {
+    color: var(--accent-primary);
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.product-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: var(--accent-primary);
+    color: var(--bg-1);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+/* Expand the shop search bar to fill its column */
+.container .search-bar {
+    width: 100%;
+    max-width: 100%;
+    background: var(--bg-2); /* Slightly lighter than the body */
+    
+}
+/* This targets the actual text you type */
+.search-input {
+    color: var(--mint-cream) !important;
+    background: transparent; /* Makes sure the input doesn't have its own white/gray background */
+    border: none;
+    outline: none; /* Removes the ugly blue glow when you click it */
+    width: 100%;
+    padding: 5px;
+}
+/* This targets the "placeholder" text (the 'search-here' text) */
+.search-input::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.7;
+}
+
+/* Style for the category filter buttons */
+.btn-outline-secondary {
+    color: var(--text-secondary);
+    border-color: var(--border-subtle);
+}
+
+.btn-outline-secondary:hover, .btn-outline-secondary.active {
+    background-color: var(--accent-primary);
+    border-color: var(--accent-primary);
+    color: var(--bg-1);
+}
